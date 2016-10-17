@@ -69,11 +69,6 @@ else
 //Showing Timer
 global.showTime = ceil(global.myTime)
 
-if (global.on_mission = 1)
-{
-    instance_destroy();
-}
-
 //Destroy Timer
 if instance_exists(obj_gameover)
 {
