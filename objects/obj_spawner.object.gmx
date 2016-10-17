@@ -88,6 +88,10 @@ if (!instance_exists(obj_asteroid))
     instance_create(random(room_width),random(room_height),obj_broken);
     instance_create(random(room_width),random(room_height),obj_broken);
     instance_create(random(room_width),random(room_height),obj_station);
+    instance_create(random(room_width),random(room_height),obj_station);
+    instance_create(random(room_width),random(room_height),obj_station);
+    instance_create(random(room_width),random(room_height),obj_station);
+    instance_create(random(room_width),random(room_height),obj_station);
 }
 
 if (!instance_exists(obj_blackholebase))
