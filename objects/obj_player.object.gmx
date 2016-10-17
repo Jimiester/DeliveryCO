@@ -223,16 +223,8 @@ if (!place_meeting(x, y, obj_blackholering))
     //part_emitter_region(part1_sys,part1_emit,x-10,x+10,y-10,y+10,ps_shape_line,ps_distr_gaussian);
     //part_emitter_burst(part1_sys,part1_emit,part1,irandom(50));
 
-    //Engine Sound
-    if keyboard_check_pressed (vk_up)
-        {
-        audio_play_sound (snd_engine, 1, true);
-        }
-    if keyboard_check_released (vk_up)
-        {   
-        audio_stop_sound (snd_engine); 
         
-}} 
+}
 ///GRAVITY 
 if (instance_exists(obj_blackholebase))
 {
@@ -414,22 +406,33 @@ image_angle = image_angle - 3;
     }
 if (speed &gt; 5) speed = 5;
 if keyboard_check(vk_space)
-{ 
-    motion_add(image_angle, 5);
-}
+    { 
+        motion_add(image_angle, 5);
+    }
+if keyboard_check_pressed(vk_space)
+    {
+        audio_play_sound(snd_boost, 10, 0);
+    }
 if !keyboard_check(vk_space)
-{
-    motion_add(image_angle, 0.2);
-}
+    {
+        motion_add(image_angle, 0.2);
+    }
 if !keyboard_check(vk_up)
-{
-    motion_add(image_angle, 0.2);
-}
+    {
+        motion_add(image_angle, 0.2);
+    }
 if global.life =- 1
-{
-    motion_add(image_angle, 0.2);
-}
-
+    {
+        motion_add(image_angle, 0.2);
+    }
+if keyboard_check_pressed (vk_up)
+    {
+        audio_play_sound (snd_engine, 1, true);
+    }
+if keyboard_check_released (vk_up)
+    {   
+        audio_stop_sound (snd_engine); 
+    }
 
 </string>
           </argument>

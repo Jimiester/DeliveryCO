@@ -23,6 +23,7 @@
     <sound>sound\snd_timer</sound>
     <sound>sound\snd_text</sound>
     <sound>sound\snd_mission</sound>
+    <sound>sound\snd_boost</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player Sprites">
