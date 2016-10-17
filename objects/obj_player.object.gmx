@@ -177,6 +177,7 @@ background_y[5] = view_xview[0]/20;
 background_y[6] = view_xview[0]/20;
 background_y[7] = view_xview[0]/30+4000;
 
+
 hspd = speed;
 speed = max(speed - 0.01, 0);
 
@@ -192,7 +193,7 @@ else
 
 if (!place_meeting(x, y, obj_blackholering))
 {
-    //Particle System
+    //Particle System WHITE
         if keyboard_check(vk_up)
         {
         part_system_depth(global.part1_sys,0);
@@ -204,16 +205,19 @@ if (!place_meeting(x, y, obj_blackholering))
     part_type_colour2(global.part1,c_ltgray,c_white);
     part_type_alpha2(global.part1,1,0);
     part_type_speed(global.part1,0.1,0.5,0,0);
+    if keyboard_check(vk_space)
+    {
+        part_type_speed(global.part1,1,1.5,0,0);
+    }
     part_type_direction(global.part1,0,359,0,0);
     part_type_gravity(global.part1,0.01,90);
-    part_type_life(global.part1,room_speed,room_speed*2);
+    part_type_life(global.part1,room_speed,room_speed*3);
     part_type_blend(global.part1,0);
 
     var xpos = x + lengthdir_x(47, image_angle - 180);
     var ypos = y + lengthdir_y(47, image_angle - 180);
     part_particles_create(global.part1_sys, xpos - 5 + random(10), ypos - 5 + random(10), global.part1, irandom(50));
     }
-   
 
     //part1_emit = part_emitter_create(part1_sys); 
     //part_emitter_region(part1_sys,part1_emit,x-10,x+10,y-10,y+10,ps_shape_line,ps_distr_gaussian);
@@ -408,10 +412,23 @@ image_angle = image_angle - 3;
     {
         exit;
     }
-
-motion_add(image_angle, 0.2);
 if (speed &gt; 5) speed = 5;
-
+if keyboard_check(vk_space)
+{ 
+    motion_add(image_angle, 5);
+}
+if !keyboard_check(vk_space)
+{
+    motion_add(image_angle, 0.2);
+}
+if !keyboard_check(vk_up)
+{
+    motion_add(image_angle, 0.2);
+}
+if global.life =- 1
+{
+    motion_add(image_angle, 0.2);
+}
 
 
 </string>
