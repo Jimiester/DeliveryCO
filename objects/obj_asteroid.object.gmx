@@ -143,6 +143,9 @@ part_emitter_burst(global.P_System2,global.Particle2_emit,global.Particle2,irand
     if (global.life &gt; 0)
     {
         global.life -= 1;
+        global.multiplier = 75;
+        global.successCount = 0;
+        global.multiplierhud = 0;
         global.myTime = 30;
         instance_create(x,y,obj_dialogue2);
         instance_create(1696,1200,obj_player);

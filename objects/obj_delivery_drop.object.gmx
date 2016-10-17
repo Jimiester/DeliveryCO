@@ -78,9 +78,24 @@
 instance_create(x,y, obj_dialogue4); 
 instance_create(x, y, obj_timer);
 audio_play_sound(snd_pickup,0,0);
+
+//multiplier code
+global.successCount += 1;
+
+if global.successCount &gt;= global.multiplierStep
+{
+    global.multiplier *= 2;
+    global.successCount = 0;
+}
+
+var give;
+give = 1 * global.multiplier
+
+global.points += give;
+
 global.cargo -= 1;
 global.on_mission = 0;
-global.points += 75;
+global.multiplierhud += 1;
 instance_destroy();
 </string>
           </argument>

@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.points = 0;
+            <string>global.multiplierhud = 1;
+global.multiplier = 75;
+global.points = 0;
+global.multiplierStep = 2;
+global.successCount = 0;
 global.life = 2;
 </string>
           </argument>
@@ -105,7 +109,7 @@ draw_set_color (c_white);
 draw_set_font(fnt_small);
 draw_text(64, 96,"Cargo: ");
 draw_text(64, 64,"Life: ");
-draw_text(64,32,"Score: " + string(global.points)); 
+draw_text(64,32,"Score: " + string(global.points) + " x" + string(global.multiplierhud)); 
 
 </string>
           </argument>
