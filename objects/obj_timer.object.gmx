@@ -58,26 +58,20 @@ if global.myTime &gt; 0
 {
     global.myTime = global.myTime - delta_time/1000000
 }
-//else
-//{
-    //global.myTime = 0
-    //Failed mission info here
+else
+{
+    global.myTime = 0
     //instance_create(x,y,obj_dialogue3);
     //instance_create(0,0,obj_gameover);   
    
-//}
+}
 
 //Showing Timer
 global.showTime = ceil(global.myTime)
 
 if (global.on_mission = 1)
 {
-    instance_destroy()
-}
-
-if global.showTime = 10 
-{
- alarm[0] = room_speed*10;
+    instance_destroy();
 }
 
 //Destroy Timer
