@@ -122,7 +122,7 @@ audio_play_sound(snd_explode,0,0);
         global.life -= 1;
         global.myTime = 30;
         global.multiplier = 75;
-        global.multiplierhud = 0;
+        global.multiplierhud = 1;
         global.successCount = 0;
         instance_create(1696,1200,obj_player);
     }
