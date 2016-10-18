@@ -124,7 +124,7 @@ audio_play_sound(snd_explode,0,0);
         global.multiplier = 75;
         global.multiplierhud = 1;
         global.successCount = 0;
-        instance_create(1696,1200,obj_player);
+        instance_create(obj_hub_floor.x,obj_hub_floor.y,obj_player);
     }
     else
     {

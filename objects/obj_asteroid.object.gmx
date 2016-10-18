@@ -148,7 +148,7 @@ part_emitter_burst(global.P_System2,global.Particle2_emit,global.Particle2,irand
         global.multiplierhud = 1;
         global.myTime = 30;
         instance_create(x,y,obj_dialogue2);
-        instance_create(1696,1200,obj_player);
+        instance_create(obj_hub_floor.x,obj_hub_floor.y,obj_player);
     }
     else
     {

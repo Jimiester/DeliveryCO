@@ -112,6 +112,11 @@ if (!instance_exists(obj_hub_floor))
     instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_asteroid_restrict);
 }
 
+if (!instance_exists(obj_player)) 
+{
+    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_player)
+}
+
 
 
 </string>

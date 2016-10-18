@@ -151,7 +151,7 @@ part_emitter_burst(global.P_System,global.Particle1_emit,global.Particle1,irando
         global.multiplierhud = 1;
         global.successCount = 0;
         instance_create(x,y,obj_dialogue2);
-        instance_create(1696,1200,obj_player);
+        instance_create(obj_hub_floor.x,obj_hub_floor.y,obj_player);
     }
     else
     {
