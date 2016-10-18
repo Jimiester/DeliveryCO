@@ -56,11 +56,8 @@
     <instance objName="obj_spawner" x="32" y="32" name="inst_AB5B7B0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner" x="64" y="32" name="inst_E350187F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="96" y="32" name="inst_5ED162FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hub_roof" x="1696" y="960" name="inst_B4B164A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stars" x="1760" y="800" name="inst_6E116B1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stars" x="1312" y="640" name="inst_0F593415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hub_wall" x="1696" y="960" name="inst_7F6B067C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hub_floor" x="1696" y="960" name="inst_BDDD20B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_delivery_arrow" x="188" y="33" name="inst_22BA911A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_delivery" x="156" y="34" name="inst_EFC6A193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stars" x="544" y="704" name="inst_AF72995B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,9 +78,6 @@
     <instance objName="obj_stars" x="4704" y="4736" name="inst_44A458F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stars" x="2272" y="4032" name="inst_6ABD9673" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stars" x="2752" y="2944" name="inst_4A354520" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_red_light" x="1696" y="960" name="inst_C2D9F791" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_red_light_glow" x="1696" y="960" name="inst_893AA225" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_asteroid_restrict" x="1696" y="960" name="inst_C038E85B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialogue" x="260" y="33" name="inst_432EED5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stars" x="2528" y="576" name="inst_C11D0CAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bgmusic" x="305" y="30" name="inst_8452FEEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
