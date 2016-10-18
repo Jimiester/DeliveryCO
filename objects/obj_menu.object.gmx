@@ -114,7 +114,7 @@ draw_sprite(sprite_index, 0, x + 16, y + mpos * space);
 
 draw_set_font(fnt_small);
 draw_text_outline(64, 830, "Sly Baron Games (2016)", 3, c_black, 10)
-draw_text_outline(64, 850, "Created by: Adin Milostnik, Jamie Blick, Jeremy Blick", 3, c_black, 10)
+draw_text_outline(64, 850, "Created by: Adin Milo, Jamie Blick, Jeremy Blick", 3, c_black, 10)
 
 
 </string>
