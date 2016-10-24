@@ -56,6 +56,7 @@
       <sprite>sprites\spr_broken</sprite>
       <sprite>sprites\spr_sign1</sprite>
       <sprite>sprites\spr_sign2</sprite>
+      <sprite>sprites\spr_asteroid_l2</sprite>
     </sprites>
     <sprites name="Enemy Sprites">
       <sprite>sprites\spr_pirate</sprite>
@@ -107,6 +108,7 @@
     <objects name="World Objects">
       <object>objects\obj_asteroid</object>
       <object>objects\obj_asteroid_l</object>
+      <object>objects\obj_asteroid_l2</object>
       <object>objects\obj_broken</object>
       <object>objects\obj_station</object>
       <object>objects\obj_hub_roof</object>
