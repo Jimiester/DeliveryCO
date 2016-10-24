@@ -419,13 +419,13 @@ if keyboard_check_pressed(vk_space)
         audio_play_sound(snd_boost, 10, 0);
     }
 if !keyboard_check(vk_space)
-    {
-        motion_add(image_angle, 0.2);
-    }
+   {
+       motion_add(image_angle, 0.2);
+   }
 if !keyboard_check(vk_up)
-    {
-        motion_add(image_angle, 0.2);
-    }
+   {
+          motion_add(image_angle, 0.2);
+   }
 if global.life =- 1
     {
         motion_add(image_angle, 0.2);
