@@ -62,6 +62,7 @@ instance_destroy();
 audio_play_sound(snd_pickup,0,0);
 global.cargo += 1;
 global.on_mission = 1;
+with (obj_dialogue) instance_destroy();
 
 </string>
           </argument>

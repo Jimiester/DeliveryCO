@@ -32,6 +32,7 @@ audio_play_sound(snd_bgmusic2, 10, true);
 
 
 
+
 </string>
           </argument>
         </arguments>
@@ -64,6 +65,7 @@ draw_text(display_get_gui_width()/2, display_get_gui_height()/2,  "Game over!##P
 //draw_text(room_width/2,room_height/2 + 50,"Press R to Restart!");
 draw_text(display_get_gui_width()/2, display_get_gui_height()/2+8,  "Your Score Was: " + string(global.points));
 //draw_text(room_width/2,room_height/2-12 + 50,"Press R to Restart!");
+
 </string>
           </argument>
         </arguments>

@@ -113,7 +113,12 @@ audio_play_sound(snd_explode,0,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>     if (instance_exists(obj_dialogue5))
+    {
+    with (obj_dialogue5) instance_destroy();
+    }
+    
+    with (obj_dialogue) instance_destroy();
     audio_play_sound(snd_explode,10,false);
    
     if (global.life &gt; 0)
