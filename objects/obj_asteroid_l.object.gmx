@@ -25,13 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//while (distance_to_object(obj_asteroid_restrict) &lt; 100)
-//{
-   // x = random(room_width);
-    //y = random(room_height);
-//}
-
-image_speed = 0;
+            <string>image_speed = 0;
 image_index = irandom(2);
 
 direction = random(360);

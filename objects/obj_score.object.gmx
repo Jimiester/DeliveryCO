@@ -31,6 +31,7 @@ global.points = 0;
 global.multiplierStep = 2;
 global.successCount = 0;
 global.life = 2;
+global.cargo = 0;
 </string>
           </argument>
         </arguments>
