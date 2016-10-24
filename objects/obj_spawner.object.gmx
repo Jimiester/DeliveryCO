@@ -27,8 +27,20 @@
             <kind>1</kind>
             <string>randomize();
 
+if (!instance_exists(obj_hub_floor))
+{
+    instance_create(random(room_width),random(room_height),obj_hub_floor);
+    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_hub_wall);
+    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_hub_roof);
+    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_red_light);
+    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_red_light_glow);
+    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_asteroid_restrict);
+}
+
 if (!instance_exists(obj_asteroid))
 { 
+    if (!distance_to_object(obj_asteroid_restrict) &lt;= 200)
+    {
     instance_create(random(room_width),random(room_height),obj_asteroid);
     instance_create(random(room_width),random(room_height),obj_asteroid);  
     instance_create(random(room_width),random(room_height),obj_asteroid);
@@ -92,6 +104,12 @@ if (!instance_exists(obj_asteroid))
     instance_create(random(room_width),random(room_height),obj_station);
     instance_create(random(room_width),random(room_height),obj_station);
     instance_create(random(room_width),random(room_height),obj_station);
+    }
+    else
+    {
+        x = random(room_width);
+        y = random(room_height);
+    }
 }
 
 if (!instance_exists(obj_blackholebase))
@@ -102,15 +120,7 @@ if (!instance_exists(obj_blackholebase))
     instance_create(obj_blackholebase.x, obj_blackholebase.y, obj_blackholering3);
 }
 
-if (!instance_exists(obj_hub_floor))
-{
-    instance_create(random(room_width),random(room_height),obj_hub_floor);
-    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_hub_wall);
-    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_hub_roof);
-    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_red_light);
-    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_red_light_glow);
-    instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_asteroid_restrict);
-}
+
 
 if (!instance_exists(obj_player)) 
 {

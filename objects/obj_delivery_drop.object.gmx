@@ -75,9 +75,9 @@
           <argument>
             <kind>1</kind>
             <string>///Drop cargo off
-instance_create(x,y, obj_dialogue4); 
-instance_create(x, y, obj_timer);
+instance_create(x,y, obj_dialogue4);
 audio_play_sound(snd_pickup,0,0);
+global.myTime = 30;
 
 //multiplier code
 global.successCount += 1;
