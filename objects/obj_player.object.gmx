@@ -215,6 +215,9 @@ if (!place_meeting(x, y, obj_blackholering))
             part_type_blend(global.part1,0);
             part_type_colour2(global.part1,c_ltgray,c_white);
             part_type_speed(global.part1,0.1,0.5,0,0);
+            var xpos = x + lengthdir_x(47, image_angle - 180);
+            var ypos = y + lengthdir_y(47, image_angle - 180);
+            part_particles_create(global.part1_sys, xpos - 5 + random(10), ypos - 5 + random(10), global.part1, irandom(50));
         }
 
     if keyboard_check(vk_space)
@@ -224,9 +227,7 @@ if (!place_meeting(x, y, obj_blackholering))
    
     }
 //Particle Emitter Region    
-var xpos = x + lengthdir_x(47, image_angle - 180);
-var ypos = y + lengthdir_y(47, image_angle - 180);
-part_particles_create(global.part1_sys, xpos - 5 + random(10), ypos - 5 + random(10), global.part1, irandom(50));
+
 
     //part1_emit = part_emitter_create(part1_sys); 
     //part_emitter_region(part1_sys,part1_emit,x-10,x+10,y-10,y+10,ps_shape_line,ps_distr_gaussian);
