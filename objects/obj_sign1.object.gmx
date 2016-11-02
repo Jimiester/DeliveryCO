@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = point_direction(obj_sign1.x, obj_sign2.y, obj_hub_floor.x, obj_hub_floor.y);
+            <string>if instance_exists(obj_hub_floor)
+{
+image_angle = point_direction(obj_sign1.x, obj_sign2.y, obj_hub_floor.x, obj_hub_floor.y);
 
 
 sprite_index = spr_sign1; 
@@ -38,6 +40,7 @@ if (global.on_mission = 1)
 image_speed = 1.0; 
 }
 
+}
 </string>
           </argument>
         </arguments>

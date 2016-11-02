@@ -80,61 +80,51 @@ if instance_exists(obj_gameover)
                             if global.showTime = 10.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                            
                             }
                             
                             if global.showTime = 9.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                            
                             }
                             
                             if global.showTime = 8.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                            
-                            
                             }
+                            
                             if global.showTime = 7.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                         
                             }
                             
                             if global.showTime = 6.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                           
                             }
                             
                             if global.showTime = 5.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                         
                             }
                             
                             if global.showTime = 4.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                            
                             }
                             
                             if global.showTime = 3.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                        
                             }
                             
                             if global.showTime = 2.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                       
                             }
                             
                             if global.showTime = 1.0
                             {
                             if !audio_is_playing(snd_timer) { audio_play_sound(snd_timer, 1, false) }
-                        
                             }
 
 
@@ -160,14 +150,19 @@ if instance_exists(obj_gameover)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_80s)
-draw_set_color(c_white)
-draw_text(view_wview/1.25, 48, "Time Left: " + string(global.showTime))
-
-if global.showTime &lt; 10 
-    {
+            <string>if global.showTime &gt; 10
+{ 
+draw_set_font(fnt_light);
+draw_set_color(c_white);
+draw_text(view_wview/1.25, 48, "Time Left: " + string(global.showTime));
+}
+else
+{
+    draw_set_font(fnt_light);
     draw_set_color(c_red);
-    }
+    draw_text(view_wview/1.25, 180, "Time Left: " + string(global.showTime));
+    draw_set_alpha(lerp(0,1,10));
+}
 </string>
           </argument>
         </arguments>

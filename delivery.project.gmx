@@ -101,6 +101,11 @@
     <font>fonts\fnt_small</font>
     <font>fonts\fnt_large</font>
     <font>fonts\fnt_80s</font>
+    <font>fonts\fnt_space</font>
+    <font>fonts\fnt_atomic</font>
+    <font>fonts\fnt_neon</font>
+    <font>fonts\fnt_light</font>
+    <font>fonts\fnt_double</font>
   </fonts>
   <objects name="objects">
     <objects name="Enemy Objects">
