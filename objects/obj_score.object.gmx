@@ -102,6 +102,8 @@ if (global.cargo == 1)
     draw_sprite(spr_crate, 0, 590, 878);
 }
     
+draw_set_colour(c_white);
+draw_rectangle(55, 15, 218, 49, true);
 
 
 draw_set_halign(fa_left);
