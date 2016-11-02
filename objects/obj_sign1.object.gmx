@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = spr_sign1; 
+            <string>image_angle = point_direction(obj_sign1.x, obj_sign2.y, obj_hub_floor.x, obj_hub_floor.y);
+
+
+sprite_index = spr_sign1; 
 if (global.on_mission = 0)
 {
 image_speed = 0.2;
@@ -35,7 +38,6 @@ if (global.on_mission = 1)
 image_speed = 1.0; 
 }
 
-point_direction(obj_sign1.x, obj_sign1.y, obj_hub_floor.x, obj_hub_floor.y)
 </string>
           </argument>
         </arguments>

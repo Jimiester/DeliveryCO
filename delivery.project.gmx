@@ -100,6 +100,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
     <font>fonts\fnt_large</font>
+    <font>fonts\fnt_80s</font>
   </fonts>
   <objects name="objects">
     <objects name="Enemy Objects">

@@ -115,19 +115,37 @@ if (!instance_exists(obj_asteroid))
 
 if (!instance_exists(obj_blackholebase))
 {
+    if (!distance_to_object(obj_asteroid_restrict) &lt;= 200)
+    {
     instance_create(random(room_width),random(room_height),obj_blackholebase);
     instance_create(obj_blackholebase.x, obj_blackholebase.y, obj_blackholering);
     instance_create(obj_blackholebase.x, obj_blackholebase.y, obj_blackholering2);
     instance_create(obj_blackholebase.x, obj_blackholebase.y, obj_blackholering3);
+    }
 }
 
 if (!instance_exists(obj_sign2))
 {
+    if (!distance_to_object(obj_asteroid_restrict) &lt;= 200)
+    {
     instance_create(random(room_width)-100,random(room_height)-100, obj_sign2);
+    instance_create(random(room_width)-100,random(room_height)-100, obj_sign2);
+    instance_create(random(room_width)-100,random(room_height)-100, obj_sign2);
+    instance_create(random(room_width)-100,random(room_height)-100, obj_sign2);
+    }
 
 }
+if (!instance_exists(obj_sign1))
+{
+    if (!distance_to_object(obj_asteroid_restrict) &lt;= 200)
+    {
+    instance_create(random(room_width)-100,random(room_height)-100, obj_sign1);
+    instance_create(random(room_width)-100,random(room_height)-100, obj_sign1);
+    instance_create(random(room_width)-100,random(room_height)-100, obj_sign1);
+    instance_create(random(room_width)-100,random(room_height)-100, obj_sign1);
+    }
 
-
+}
 
 
 
