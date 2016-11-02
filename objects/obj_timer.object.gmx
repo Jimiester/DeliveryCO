@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.myTime = 60.0
+            <string>global.myTime = 15.0
 global.showTime = global.myTime 
+time = 0;
+increase = 1;
                             
 
 
@@ -150,18 +152,25 @@ if instance_exists(obj_gameover)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.showTime &gt; 10
+            <string>//increase values
+time += increase;
+
+//calculations
+if(time &gt;= 25 || time &lt;= 0){increase = -increase}
+
+if global.showTime &gt; 10
 { 
 draw_set_font(fnt_light);
 draw_set_color(c_white);
-draw_text(view_wview/1.25, 48, "Time Left: " + string(global.showTime));
+draw_text(view_wview/1.21, 48, "Time Left: " + string(global.showTime));
 }
 else
 {
     draw_set_font(fnt_light);
     draw_set_color(c_red);
-    draw_text(view_wview/1.25, 180, "Time Left: " + string(global.showTime));
-    draw_set_alpha(lerp(0,1,10));
+    draw_set_alpha(lerp(0,1,time/25));
+    draw_text(view_wview/1.21, 48, "Time Left: " + string(global.showTime));
+    draw_set_alpha(1);
 }
 </string>
           </argument>

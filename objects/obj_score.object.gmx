@@ -99,7 +99,7 @@ else if (global.life == 0)
 
 if (global.cargo == 1)
 {
-    draw_sprite(spr_crate, 0, 100, 160);
+    draw_sprite(spr_crate, 0, 590, 878);
 }
     
 
