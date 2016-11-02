@@ -151,7 +151,7 @@ part_emitter_burst(global.P_System,global.Particle1_emit,global.Particle1,irando
     if (global.life &gt; 0)
     {
         global.life -= 1;
-        global.myTime = 30;
+        global.myTime = 60;
         global.multiplier = 75;
         global.multiplierhud = 1;
         global.successCount = 0;
