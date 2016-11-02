@@ -131,8 +131,11 @@ if (global.life &gt; 0)
         with other instance_destroy();
         instance_create(random(room_width), random(room_height), obj_pirate);
         global.life -= 1;
-        global.myTime = 30;
-        instance_create(1696,1200,obj_player);
+        global.myTime = 60;
+        global.multiplier = 75;
+        global.successCount = 0;
+        global.multiplierhud = 1;
+        instance_create(obj_hub_floor.x,obj_hub_floor.y+100,obj_player);
     }
     else
     {
