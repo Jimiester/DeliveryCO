@@ -75,6 +75,7 @@
       <sprite>sprites\spr_vslider</sprite>
       <sprite>sprites\spr_vbar</sprite>
     </sprites>
+    <sprite>sprites\spr_overlay</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stars</background>

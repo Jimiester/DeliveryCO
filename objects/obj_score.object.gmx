@@ -81,7 +81,9 @@ if instance_exists(obj_gameover)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.life == 2)
+            <string>draw_sprite(spr_overlay, 1, view_hview-300, view_wview-750)
+
+if (global.life == 2)
 {
     draw_sprite(spr_lives, 0, 250, 132);
     draw_sprite(spr_lives, 0, 278, 132);
