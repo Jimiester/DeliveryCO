@@ -320,20 +320,7 @@ if !audio_is_playing(snd_blackhole) { audio_play_sound(snd_blackhole, 1, false) 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_type_shape(global.Particle4,pt_shape_explosion);
-part_type_scale(global.Particle4,1,1); 
-part_type_size(global.Particle4,0.5,0.7,-0.005,0);
-part_type_colour3(global.Particle4,c_maroon,c_black,c_ltgray);
-part_type_alpha2(global.Particle4,1,0);
-part_type_speed(global.Particle4,0.1,0.5,0,0);
-part_type_direction(global.Particle4,0,359,0,0);
-part_type_gravity(global.Particle4,0.01,90);
-part_type_life(global.Particle4,room_speed,room_speed*2);
-part_type_blend(global.Particle4,0);
-part_emitter_region(global.P_System4,global.Particle_emit4,x-75,x+75,y-75,y+75,ps_shape_ellipse,ps_distr_gaussian);
-part_emitter_burst(global.P_System4,global.Particle_emit4,global.Particle4,irandom(100));
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

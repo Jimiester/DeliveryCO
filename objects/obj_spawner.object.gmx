@@ -142,7 +142,7 @@ if (!instance_exists(obj_sign2))
 }
 if (!instance_exists(obj_sign1))
 {
-    if (!distance_to_object(obj_asteroid_restrict) &lt;= 200)
+    if (!distance_to_object(obj_asteroid_restrict) &lt;= 200) and (!distance_to_object(obj_sign1) &lt;= 200)
     {
     instance_create(random(room_width)-100,random(room_height)-100, obj_sign1);
     instance_create(random(room_width)-100,random(room_height)-100, obj_sign1);
