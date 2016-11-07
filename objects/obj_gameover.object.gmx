@@ -33,6 +33,7 @@ audio_play_sound(snd_bgmusic2, 10, true);
 
 
 
+
 </string>
           </argument>
         </arguments>
@@ -61,9 +62,9 @@ draw_set_valign(fa_middle);
 draw_set_color(c_white);
 //draw_text(room_width/2,room_height/2,"Game Over")
 draw_set_font(fnt_large);
-draw_text(display_get_gui_width()/2, display_get_gui_height()/2,  "Game over!##Press R to restart"); //Draw a text in the center of the GUI. The # sign is a newline in gamemaker.
+draw_text(600, 350,  "Game over!##Press R to restart"); //Draw a text in the center of the GUI. The # sign is a newline in gamemaker.
 //draw_text(room_width/2,room_height/2 + 50,"Press R to Restart!");
-draw_text(display_get_gui_width()/2, display_get_gui_height()/2+8,  "Your Score Was: " + string(global.points));
+draw_text(600, 450,"Your Score Was: " + string(global.points));
 //draw_text(room_width/2,room_height/2-12 + 50,"Press R to Restart!");
 
 </string>
