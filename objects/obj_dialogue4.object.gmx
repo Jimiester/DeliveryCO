@@ -34,7 +34,7 @@ if instance_exists (obj_dialogue3)
 instance_destroy();
 }
 alarm[0] = room_speed*5;
-message[0] = "You made a delivery. Go get more!";
+message[0] = "You made a delivery. Wait for new delivery instructions!";
 //}
 message_current = 0; //0 is the first number in our array, and the message we are currently at
 message_end = 0; //6 is the last number in our array
