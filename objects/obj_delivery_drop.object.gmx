@@ -78,6 +78,7 @@
 instance_create(x,y, obj_dialogue4);
 audio_play_sound(snd_pickup,0,0);
 global.myTime = 60;
+obj_delivery.alarm[0] = irandom_range(240, 480);
 
 //multiplier code
 global.successCount += 1;
@@ -92,10 +93,10 @@ var give;
 give = 1 * global.multiplier
 
 global.points += give;
-
 global.cargo -= 1;
-global.on_mission = 0;
 global.multiplierhud += 1;
+global.on_mission = 0;
+global.get_mission = 1;
 
 if (instance_exists(obj_dialogue5))
 {

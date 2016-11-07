@@ -157,6 +157,11 @@ part_emitter_burst(global.P_System,global.Particle1_emit,global.Particle1,irando
         global.successCount = 0;
         global.multiplierhud = 1;
         instance_create(obj_hub_floor.x,obj_hub_floor.y+100,obj_player);
+        
+        if (!instance_exists(obj_delivery_zone))
+        {
+            instance_create(random(room_width),random(room_height),obj_delivery_zone);
+        }
     }
     else
     {
