@@ -24,6 +24,7 @@
     <sound>sound\snd_text</sound>
     <sound>sound\snd_mission</sound>
     <sound>sound\snd_boost</sound>
+    <sound>sound\snd_morse</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player Sprites">

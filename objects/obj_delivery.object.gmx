@@ -103,17 +103,24 @@ if(time &gt;= 25 || time &lt;= 0){increase = -increase}
     {
     draw_set_alpha(lerp(0,1,time/25))
     draw_text(view_wview/2.5,64,"Get back to the Hub!")
-    
     draw_set_alpha(1)
     }
 }
 
 if (global.get_mission == 1)
 {
-    draw_set_alpha(lerp(0,1,time/25))
+    if !audio_is_playing(snd_morse) { audio_play_sound(snd_morse, 1, false)}
     draw_text(view_wview/2.5,64,"Mission being Received...")
-    draw_set_alpha(1)
-    }
+}
+
+if (instance_exists(obj_delivery_zone))
+{
+    audio_stop_sound(snd_morse);
+}
+
+
+
+
 
 </string>
           </argument>
