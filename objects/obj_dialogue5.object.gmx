@@ -146,13 +146,13 @@ if instance_exists(obj_gameover)
             <string>
 if (instance_exists(obj_dialogue5))
 {
-    draw_sprite(spr_box2, 0, view_xview[0]+100, view_yview[0]+600);
-    draw_sprite(spr_portrait, image_index, view_xview[0]+50, view_yview[0]+448);
+    draw_sprite(spr_box2, 0, view_xview[0]+100, view_yview[0]+100);
+    draw_sprite(spr_portrait, image_index, view_xview[0]+50, view_yview[0]-50);
 }
 
-draw_text(view_xview[0]+350, view_yview[0]+710, message_draw); //draw the text at the coordinates
-draw_text(view_xview[0]+380, view_yview[0]+775, "ENTER - Continue"); //draw the text at the coordinates
-//draw_text(view_xview[0]+860, view_yview[0]+775, "BKSPACE - Skip"); //draw the text at the coordinates
+draw_text(view_xview[0]+350, view_yview[0]+210, message_draw); //draw the text at the coordinates
+draw_text(view_xview[0]+380, view_yview[0]+275, "ENTER - Continue"); //draw the text at the coordinates
+//draw_text(view_xview[0]+860, view_yview[0]+275, "BKSPACE - Skip"); //draw the text at the coordinates
 </string>
           </argument>
         </arguments>

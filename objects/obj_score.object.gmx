@@ -85,18 +85,18 @@ if instance_exists(obj_gameover)
 
 if (global.life == 2)
 {
-    draw_sprite(spr_lives, 0, 250, 132);
-    draw_sprite(spr_lives, 0, 278, 132);
-    draw_sprite(spr_lives, 0, 306, 132);
+    draw_sprite(spr_lives, 0, 296, 830);
+    draw_sprite(spr_lives, 0, 324, 830);
+    draw_sprite(spr_lives, 0, 352, 830);
 }
 else if (global.life == 1)
 {
-    draw_sprite(spr_lives, 0, 250, 132);
-    draw_sprite(spr_lives, 0, 278, 132);
+    draw_sprite(spr_lives, 0, 296, 830);
+    draw_sprite(spr_lives, 0, 324, 830);
 }
 else if (global.life == 0)
 {
-    draw_sprite(spr_lives, 0, 250, 132);
+    draw_sprite(spr_lives, 0, 296, 830);
 }
 
 if (global.cargo == 1)
@@ -104,8 +104,8 @@ if (global.cargo == 1)
     draw_sprite(spr_crate, 0, 590, 878);
 }
     
-draw_set_colour(c_white);
-draw_rectangle(55, 15, 218, 49, true);
+//draw_set_colour(c_white);
+//draw_rectangle(55, 15, 218, 49, true);
 
 
 draw_set_halign(fa_left);
@@ -113,8 +113,8 @@ draw_set_valign(fa_top);
 draw_set_color (c_white);
 draw_set_font(fnt_light);
 draw_text(480, 865, "Cargo: ");
-draw_text(64, 20,"Life: ");
-draw_text(1000,20,"Score: " + string(global.points) + " x" + string(global.multiplierhud)); 
+draw_text(110, 715,"Life: ");
+draw_text(260,785, string(global.points) + " x" + string(global.multiplierhud)); 
 
 </string>
           </argument>

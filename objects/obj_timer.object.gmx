@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -162,14 +162,14 @@ if global.showTime &gt; 10
 { 
 draw_set_font(fnt_light);
 draw_set_color(c_white);
-draw_text(view_wview/1.21, 48, "Time Left: " + string(global.showTime));
+draw_text(view_wview/1.54, 795, string(global.showTime));
 }
 else
 {
     draw_set_font(fnt_light);
     draw_set_color(c_red);
     draw_set_alpha(lerp(0,1,time/25));
-    draw_text(view_wview/1.21, 48, "Time Left: " + string(global.showTime));
+    draw_text(view_wview/1.54, 795, "Time Left: " + string(global.showTime));
     draw_set_alpha(1);
 }
 </string>
