@@ -74,8 +74,9 @@
       <sprite>sprites\spr_pause_exit</sprite>
       <sprite>sprites\spr_vslider</sprite>
       <sprite>sprites\spr_vbar</sprite>
+      <sprite>sprites\spr_overlay</sprite>
+      <sprite>sprites\spr_mmoverlay</sprite>
     </sprites>
-    <sprite>sprites\spr_overlay</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stars</background>
@@ -161,10 +162,10 @@
       <object>objects\obj_room_controller</object>
       <object>objects\obj_pause_menu_controller</object>
       <object>objects\obj_controller_sound</object>
+      <object>objects\obj_CRT</object>
+      <object>objects\obj_bar</object>
+      <object>objects\obj_slider</object>
     </objects>
-    <object>objects\obj_CRT</object>
-    <object>objects\obj_slider</object>
-    <object>objects\obj_bar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
