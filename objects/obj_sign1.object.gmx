@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-sprite_index = spr_sign1; 
+            <string>sprite_index = spr_sign1; 
 if (global.on_mission = 0)
 {
 image_speed = 0.2;
