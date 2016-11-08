@@ -119,9 +119,32 @@ else if (interest == "exit")
     draw_sprite(spr_pause_continue, 0, 600, 400);
     draw_sprite(spr_pause_exit, 1, 600, 470);
 }
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_color(c_white);
+draw_set_font(fnt_medium);
+draw_text(600, 600,  "Press R To Restart");
+
+
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="82">
+      <action>
+        <libid>1</libid>
+        <id>331</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_restart_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="9" enumb="40">

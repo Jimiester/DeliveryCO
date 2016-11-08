@@ -109,6 +109,7 @@
     <font>fonts\fnt_neon</font>
     <font>fonts\fnt_light</font>
     <font>fonts\fnt_double</font>
+    <font>fonts\fnt_medium</font>
   </fonts>
   <objects name="objects">
     <objects name="Enemy Objects">
