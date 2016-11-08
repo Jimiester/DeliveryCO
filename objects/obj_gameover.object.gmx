@@ -56,7 +56,8 @@ audio_play_sound(snd_bgmusic2, 10, true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_center);
+            <string>draw_sprite(spr_mmoverlay, 1, view_hview-300, view_wview-750)
+draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 //draw_set_font(fnt_large);
 draw_set_color(c_white);
