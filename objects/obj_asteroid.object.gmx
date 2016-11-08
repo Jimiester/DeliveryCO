@@ -31,6 +31,43 @@
     y = random(room_height);
 }
 
+while (distance_to_object(obj_asteroid_l) &lt; 100)
+{
+    x = random(room_width);
+    y = random(room_height);
+}
+
+while (distance_to_object(obj_asteroid_l2) &lt; 100)
+{
+    x = random(room_width);
+    y = random(room_height);
+}
+
+while (distance_to_object(obj_asteroid) &lt; 100)
+{
+    x = random(room_width);
+    y = random(room_height);
+}
+
+while (distance_to_object(obj_broken) &lt; 100)
+{
+    x = random(room_width);
+    y = random(room_height);
+}
+
+while (distance_to_object(obj_station) &lt; 100)
+{
+    x = random(room_width);
+    y = random(room_height);
+}
+
+while (distance_to_object(obj_pirate) &lt; 100)
+{
+    x = random(room_width);
+    y = random(room_height);
+}
+
+
 image_speed = 0;
 image_index = irandom(2);
 
