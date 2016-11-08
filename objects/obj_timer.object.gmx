@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.myTime = 60.0
+            <string>global.myTime = 15.0
 global.showTime = global.myTime 
 time = 0;
 increase = 1;
@@ -169,7 +169,7 @@ else
     draw_set_font(fnt_light);
     draw_set_color(c_red);
     draw_set_alpha(lerp(0,1,time/25));
-    draw_text(view_wview/1.66, 795, "Time Left: " + string(global.showTime));
+    draw_text(view_wview/1.66, 795, string(global.showTime));
     draw_set_alpha(1);
 }
 </string>

@@ -109,7 +109,7 @@ global.Particle_emit4 = part_emitter_create(global.P_System4);
  if (global.life &gt; 0)
     {
         global.life -= 1;
-        global.myTime = 30;
+        global.myTime = 60;
         instance_create(obj_hub_floor.x,obj_hub_floor.y+100,obj_player);
     }
     else
