@@ -53,7 +53,7 @@ display_set_gui_size(view_wview[0],view_hview[0])
 {
     if (instance_exists (obj_player))
     {   
-    draw_sprite_ext(spr_delivery_arrow,0,1035,760,1,1,point_direction(obj_player.x,obj_player.y,obj_delivery_zone.x,obj_delivery_zone.y),c_white,1);
+    draw_sprite_ext(spr_arrow2 ,0,1035,760,1,1,point_direction(obj_player.x,obj_player.y,obj_delivery_zone.x,obj_delivery_zone.y),c_white,1);
     }
 }
 
