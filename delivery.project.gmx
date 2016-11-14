@@ -76,6 +76,7 @@
       <sprite>sprites\spr_vbar</sprite>
       <sprite>sprites\spr_overlay</sprite>
       <sprite>sprites\spr_mmoverlay</sprite>
+      <sprite>sprites\spr_tutorial</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -166,10 +167,12 @@
       <object>objects\obj_CRT</object>
       <object>objects\obj_bar</object>
       <object>objects\obj_slider</object>
+      <object>objects\obj_tutorialroom</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_tutorial</room>
     <room>rooms\rm_game</room>
     <room>rooms\rm_settings</room>
   </rooms>
