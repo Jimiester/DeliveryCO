@@ -29,7 +29,7 @@
 
 if (!instance_exists(obj_hub_floor))
 {
-    instance_create(random(room_width),random(room_height),obj_hub_floor);
+    instance_create(random(room_width)-500,random(room_height)-500,obj_hub_floor);
     instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_hub_wall);
     instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_hub_roof);
     instance_create(obj_hub_floor.x, obj_hub_floor.y, obj_red_light);
