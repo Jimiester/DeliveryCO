@@ -31,7 +31,6 @@ if (!audio_is_playing(snd_bgmusic2))
     audio_play_sound(snd_bgmusic2, 100, true);
     audio_sound_gain(snd_bgmusic2, global.musicVolume, 0);
 }
-
 </string>
           </argument>
         </arguments>
