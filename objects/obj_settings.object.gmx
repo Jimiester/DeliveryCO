@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize the Settings Menu
-audio_play_sound(snd_bgmusic2, 10, true);
 menu[0] = "Sound";
 
 space = 64;

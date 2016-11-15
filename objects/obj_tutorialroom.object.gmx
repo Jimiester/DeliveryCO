@@ -28,6 +28,8 @@
             <string>image_index = 0;
 image_speed = 0;
 imageNumber = 0;
+
+
 </string>
           </argument>
         </arguments>
@@ -113,6 +115,7 @@ draw_text(800, 750, "Press BKSP to SKIP");
           <argument>
             <kind>1</kind>
             <string>room_goto_next();
+audio_stop_sound(snd_bgmusic2)
 </string>
           </argument>
         </arguments>
