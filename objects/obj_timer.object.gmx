@@ -77,6 +77,11 @@ if instance_exists(obj_gameover)
     instance_destroy();
 }
 
+if global.get_mission = 1
+{
+    global.myTime = 30;
+}
+
 //sound
 
                             if global.showTime = 10.0

@@ -111,6 +111,11 @@ global.Particle_emit4 = part_emitter_create(global.P_System4);
         global.life -= 1;
         global.myTime = 60;
         instance_create(obj_hub_floor.x,obj_hub_floor.y+100,obj_player);
+        
+         if (!instance_exists(obj_delivery_zone))
+        {
+            instance_create(random(room_width),random(room_height),obj_delivery_zone);
+        }
     }
     else
     {
