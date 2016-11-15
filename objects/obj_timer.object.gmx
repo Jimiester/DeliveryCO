@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.myTime = 60.0
+            <string>global.myTime = 30.0
 global.showTime = global.myTime 
 time = 0;
 increase = 1;

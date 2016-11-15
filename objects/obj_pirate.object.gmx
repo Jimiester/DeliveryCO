@@ -219,7 +219,7 @@ if (global.life &gt; 0)
         with other instance_destroy();
         instance_create(random(room_width), random(room_height), obj_pirate);
         global.life -= 1;
-        global.myTime = 60;
+        global.myTime = 30;
         global.multiplier = 75;
         global.successCount = 0;
         global.multiplierhud = 1;
