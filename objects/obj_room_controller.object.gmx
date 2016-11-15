@@ -51,8 +51,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(snd_bgmusic);
-room_instance_clear(rm_game);
+            <string>room_instance_clear(rm_game);
 room_goto(rm_game);
 </string>
           </argument>
