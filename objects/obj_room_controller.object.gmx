@@ -53,6 +53,14 @@
             <kind>1</kind>
             <string>room_instance_clear(rm_game);
 room_goto(rm_game);
+global.multiplierhud = 1;
+global.multiplier = 75;
+global.points = 0;
+global.multiplierStep = 2;
+global.successCount = 0;
+global.life = 2;
+global.cargo = 0;
+global.myTime = 30;
 </string>
           </argument>
         </arguments>
