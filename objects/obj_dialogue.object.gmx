@@ -39,13 +39,10 @@ instance_destroy();
 }
 
 //write your messages in an array, starting at 0, like so
-message[0] = "Hey You! We need to make that delivery!";
-message[1] = "Follow the arrow above to find the drop.";
-message[2] = "Fly back through the hub to deliver the cargo.";
-message[3] = "Leave the H.U.B to start.";
+message[0] = "Hey You! Lets get delivering!";
 
 message_current = 0; //0 is the first number in our array, and the message we are currently at
-message_end = 3; //6 is the last number in our array
+message_end = 0; //6 is the last number in our array
 message_draw = ""; //this is what we 'write' out. It's blank right now
 increase = 0.5; //the speed at which new characters are added
 characters = 0; //how many characters have already been drawn
