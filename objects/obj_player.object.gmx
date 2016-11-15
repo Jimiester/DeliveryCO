@@ -262,7 +262,7 @@ if (global.myTime = 0)
     {
         instance_create(x,y,obj_dialogue2);
         global.life -= 1;
-        global.myTime = 60;
+        global.myTime = 30;
         global.multiplier = 75;
         global.successCount = 0;
         global.multiplierhud = 1;
