@@ -134,7 +134,17 @@ part_system_destroy(global.P_System8);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Wander alarm
+            <string>if (!instance_exists(obj_player))
+{
+    global.myTime = 30;
+    instance_create(x,y,obj_dialogue2);
+    instance_create(obj_hub_floor.x,obj_hub_floor.y+100,obj_player);
+       
+        if (!instance_exists(obj_delivery_zone))
+        {
+            instance_create(random(room_width),random(room_height),obj_delivery_zone);
+        }
+}
 </string>
           </argument>
         </arguments>
@@ -171,7 +181,7 @@ else speed =  0;
 
 //script_execute(state);
 
-if (distance_to_object(obj_hub_roof) = 1)
+if (distance_to_object(obj_hub_roof) = 15)
     {
         //explosion
         part_type_shape(global.Particle8,pt_shape_explosion);
@@ -186,6 +196,7 @@ if (distance_to_object(obj_hub_roof) = 1)
         part_type_blend(global.Particle8,0);
         part_emitter_region(global.P_System8,global.Particle_emit8,x-75,x+75,y-75,y+75,ps_shape_ellipse,ps_distr_gaussian);
         part_emitter_burst(global.P_System8,global.Particle_emit8,global.Particle8,irandom(100));
+        instance_destroy();
     }
 
 
@@ -215,20 +226,14 @@ if (distance_to_object(obj_hub_roof) = 1)
             <string>audio_play_sound(snd_explode,10,false);
 if (global.life &gt; 0)
     {
-        instance_destroy();
+        obj_pirate.alarm[0] = 120;
+        //instance_destroy();
         with other instance_destroy();
         instance_create(random(room_width), random(room_height), obj_pirate);
         global.life -= 1;
-        global.myTime = 30;
         global.multiplier = 75;
         global.successCount = 0;
         global.multiplierhud = 1;
-        instance_create(obj_hub_floor.x,obj_hub_floor.y+100,obj_player);
-        
-        if (!instance_exists(obj_delivery_zone))
-        {
-            instance_create(random(room_width),random(room_height),obj_delivery_zone);
-        }
     }
     else
     {

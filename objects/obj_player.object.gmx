@@ -265,18 +265,12 @@ if (global.myTime = 0)
    
     if (global.life &gt; 0)
     {
-        instance_create(x,y,obj_dialogue2);
+        obj_asteroid.alarm[0] = 120;
         global.life -= 1;
-        global.myTime = 30;
         global.multiplier = 75;
         global.successCount = 0;
         global.multiplierhud = 1;
-        instance_create(obj_hub_floor.x,obj_hub_floor.y+100,obj_player);
-        
-        if (!instance_exists(obj_delivery_zone))
-        {
-            instance_create(random(room_width),random(room_height),obj_delivery_zone);
-        }
+
     }
     else
     {
