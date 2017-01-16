@@ -170,6 +170,7 @@
       <object>objects\obj_bar</object>
       <object>objects\obj_slider</object>
       <object>objects\obj_tutorialroom</object>
+      <object>objects\obj_highscore</object>
     </objects>
   </objects>
   <rooms name="rooms">
