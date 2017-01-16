@@ -98,6 +98,7 @@
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
     <script>scripts\draw_text_outline.gml</script>
+    <script>scripts\scr_update_gmscore.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_CRT.shader</shader>

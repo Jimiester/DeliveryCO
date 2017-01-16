@@ -34,6 +34,8 @@ audio_play_sound(snd_bgmusic2, 10, true);
 
 
 
+
+
 </string>
           </argument>
         </arguments>
@@ -68,6 +70,10 @@ draw_text(600, 350,  "Game over!##Press R to restart"); //Draw a text in the cen
 draw_text(600, 450,"Your Score Was: " + string(global.points));
 //draw_text(room_width/2,room_height/2-12 + 50,"Press R to Restart!");
 
+draw_text(600, 600,"Press SPACE to submit High Score");
+
+
+
 </string>
           </argument>
         </arguments>
@@ -87,6 +93,32 @@ draw_text(600, 450,"Your Score Was: " + string(global.points));
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.playername = get_string("What is your player name?", "");
+
+scr_update_gmscore(global.playername, global.points);
+
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
