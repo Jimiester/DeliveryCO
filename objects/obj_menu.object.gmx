@@ -106,11 +106,11 @@ draw_set_color(c_white);
 var m;
 for (m = 0; m &lt; array_length_1d(menu); m += 1)
 {
-    draw_text_outline(x + space, y + (m * space), string(menu[m]), 5, c_black, 20)
+    draw_text_outline(x + space, y + (m * space+24), string(menu[m]), 5, c_black, 20)
     draw_text_outline(x,y,5,5,c_black,8); 
 }
 
-draw_sprite(sprite_index, 0, x + 16, y + mpos * space);
+draw_sprite(sprite_index, 0, x + 16, y + mpos * space+24);
 
 draw_set_font(fnt_small);
 draw_text_outline(64, 830, "Sly Baron Games (2016)", 3, c_black, 10)
