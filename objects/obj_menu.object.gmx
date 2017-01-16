@@ -28,8 +28,8 @@
             <string>/// Initialize the Main Menu
 audio_play_sound(snd_bgmusic2, 10, true);
 menu[0] = "Start Game";
-menu[1] = "Options";
-menu[2] = "Exit Game";
+//menu[1] = "Options";
+menu[1] = "Exit Game";
 
 space = 64;
 mpos = 0;

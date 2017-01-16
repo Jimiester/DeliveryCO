@@ -10,12 +10,6 @@ switch (mpos)
     }
     case 1:
     {
-        audio_play_sound(snd_start,10,false);
-        room_goto(rm_settings);
-        break;
-    }
-    case 2:
-    {
         game_end();
         break;
     }
